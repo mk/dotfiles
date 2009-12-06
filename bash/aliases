@@ -1,0 +1,26 @@
+# bash
+alias ls='ls -G'
+alias ll='ls -la'
+alias livetunnel='ssh -N -f -L 3333:192.168.40.102:3306 mkavalar@dbslave2.sauspiel.de'
+alias dot="mate ~/Documents/dotfiles"
+alias reload="source ~/Documents/dotfiles/bashrc"
+
+alias fm4='ogg123 http://fm4.nobody.at:8080/fm4-mq.ogg'
+alias orails='rails && ett'
+alias flash='cd ~/sauspiel/sauspiel-flash'
+alias oflash='flash && mate src/sauspiel/client'
+alias er='cd ~/sauspiel/sauspiel-er'
+alias reload_bundles="osascript -e 'tell app \"TextMate\" to reload bundles'"
+alias sshface="ssh deploy@facebook.sauspiel.de -i /Users/mk/.ssh/id_rsa2"
+alias tunnelskat="ssh -N -f -L 3388:192.168.40.104:3306 mkavalar@skatstube.de"
+alias sswww="ssh deploy@www.sauspiel.de -i /Users/mk/.ssh/id_rsa2"
+alias start_postgres="/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/mk/Documents/Databases/postgres84/defaultdb -l /Users/mk/Documents/Databases/postgres84/pg.log start"
+
+# git
+alias a="git status"
+
+# ruby, rails
+alias rails='cd ~/sauspiel/sauspiel-rails'
+alias ett='mate app/ db/ lib/ config/ public/ spec/ test/ features/'
+alias r='rake'
+alias sc='./script/console'
