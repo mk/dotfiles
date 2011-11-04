@@ -1,7 +1,6 @@
 # bash
 alias ls='ls -G'
 alias ll='ls -la'
-alias livetunnel='ssh -N -f -L 3333:192.168.40.102:3306 mkavalar@dbslave2.sauspiel.de'
 alias dot="mate ~/Documents/dotfiles"
 alias reload="source ~/Documents/dotfiles/bashrc"
 
@@ -11,16 +10,14 @@ alias flash='cd ~/sauspiel/sauspiel-flash'
 alias oflash='flash && mate src/sauspiel/client'
 alias er='cd ~/sauspiel/sauspiel-er'
 alias reload_bundles="osascript -e 'tell app \"TextMate\" to reload bundles'"
-alias sshface="ssh deploy@facebook.sauspiel.de -i /Users/mk/.ssh/id_rsa2"
-alias tunnelskat="ssh -N -f -L 3388:192.168.40.104:3306 mkavalar@skatstube.de"
-alias sswww="ssh deploy@www.sauspiel.de -i /Users/mk/.ssh/id_rsa2"
-alias start_postgres="/opt/local/lib/postgresql84/bin/pg_ctl -D /Users/mk/Documents/Databases/postgres84/defaultdb -l /Users/mk/Documents/Databases/postgres84/pg.log start"
 
+alias pgtunnel="ssh -L 5433:10.118.19.34:5432 deploy@dbmaster.skatstube.de -N"
+alias couchtunnel="ssh -L 5984:10.118.19.17:5984 game.fuchstreff.de -N"
+alias nginx="sudo /opt/nginx/sbin/nginx"
 # git
 alias a="git status"
 
 # ruby, rails
-alias rails='cd ~/sauspiel/sauspiel-rails'
 alias ett='mate app/ db/ lib/ config/ public/ spec/ test/ features/'
 alias r='rake'
 alias sc='./script/console'

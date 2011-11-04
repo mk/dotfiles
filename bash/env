@@ -16,5 +16,6 @@ export FLEX_HOME="/Users/mk/Downloads/flex_sdk_4-9336"
 export PATH="/opt/local/lib/mysql5/bin:$PATH"
 export PATH="/opt/local/lib/postgresql84/bin:$PATH"
 export PATH="/opt/local/lib/gromacs/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
 
 HISTFILESIZE=1000000000 HISTSIZE=1000000
